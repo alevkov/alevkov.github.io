@@ -210,8 +210,12 @@ sup {
  */
 
 img {
-  border-style: none;
-}
+  opacity:0;
+  -moz-transition: opacity 2s; /* Firefox 4 */
+  -webkit-transition: opacity 2s; /* Safari and Chrome */
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}​
 
 /**
  * Hide the overflow in IE.
