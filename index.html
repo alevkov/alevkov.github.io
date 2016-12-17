@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -18,7 +19,7 @@
     <header style="background:black url(img/sp.jpg) no-repeat center;background-size: auto; background-color: #B1D8CA" class="bg-cv ptl pbx pvxl-ns phl">
       <div class="dt center mw8" >
       <div class="dtc-ns wi-100 wi-50-ns v-mid ba b--white-50 plm pvm mbm mbn-ns">
-        <h1 class="mvn f1 f1 mega-l ttu white" style="line-height: 1; ">aleksey l.</h1>
+        <h1 id="container" class="mvn f1 f1 mega-l ttu white" style="line-height: 1; ">aleksey l.</h1>
         <br>
       </div>
     </div>
@@ -58,7 +59,7 @@
       <a class="link white" href="http://tachyons.io">&amp; Tachyons</a>
     </div>
     </footer>
-
+    <script src="js/shuffle-letters.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -69,6 +70,13 @@
         var pageTracker = _gat._getTracker("UA-35858753-1");
         pageTracker._trackPageview();
       } catch(err) {}
+    </script>
+    <script type="text/javascript">
+    var third = document.querySelectorAll('.mvn');
+    for (var i = 0; i < third.length; i++) {
+      third[i].hidden = false;
+    }
+    shuffleLetters(third);
     </script>
   </body>
 </html>

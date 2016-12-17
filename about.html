@@ -53,7 +53,7 @@
       <a class="link white" href="http://tachyons.io">&amp; Tachyons</a>
     </div>
     </footer>
-
+    <script src="js/shuffle-letters.js"></script>
     <script src="javascripts/scale.fix.js"></script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -64,6 +64,13 @@
         var pageTracker = _gat._getTracker("UA-35858753-1");
         pageTracker._trackPageview();
       } catch(err) {}
+    </script>
+    <script type="text/javascript">
+    var third = document.querySelectorAll('.mvn');
+    for (var i = 0; i < third.length; i++) {
+      third[i].hidden = false;
+    }
+    shuffleLetters(third);
     </script>
   </body>
 </html>
